@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro - Paulínia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   
+<script>
+    function formatar(mascara, documento){
+      var i = documento.value.length;
+      var saida = mascara.substring(0,1);
+      var texto = mascara.substring(i)
+      
+      if (texto.substring(0,1) != saida){
+                documento.value += texto.substring(0,1);
+      }
+      
+    }
+</script>
+    
+        <header>
+            <h1>Natal das Luzes</h1>
+            <h2>
+                um Oferecimento da Prefeitura Municupal de Paulinia</h2>
+        </header>
+        
+        <main>
+         
+            
+            <form class="form" action="contactform.php" method="post">
+                <div class="titulo">
+                    Formulário de registro da Prefeitura Municipal de Paulínia                
+                </div> 
+                <div class="input_1"> 
+                    <div class="input">                   
+                     <label for="fname">Nome</label>
+                        <input type="text" id="fname" required maxlength="20" placeholder="João">
+                    </div>                    
+                    <div class="input">
+                        <label for="sname">Sobrenome</label>
+                        <input type="text" id="sname" required maxlength="80" placeholder="da Silva Júnior">
+                    </div>
+                </div>
+                <div class="input">
+                    <label for="mail">E-mail</label>
+                    <input type="email" id="mail" placeholder="Joaodasilva@mail.com">
+                </div>
+                <div class="input">
+                    <label for="tel">Telefone</label>
+                    <input type="text" id="tel" required maxlength="13" OnKeyPress="formatar('## ##### ####', this)" placeholder="(99) 9 99999 9999">
+                </div>
+                <div class="input">
+                    <label for="nascimento">Data de Nascimento</label>
+                    <input type="text" id="nascimento" required maxlength="10" OnKeyPress="formatar('##/##/####', this)" placeholder="DD/MM/AAAA">
+                </div>
+                <div class="input">
+                    <label class="p"for="maioridade">Você é maior de idade?</label>
+                        <ul>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="maioridade" value="sim" >
+                                    <span>Sim</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="maioridade" value="nao" checked>
+                                    <span>Não</span>
+                                </label>
+                            </li>
+                        </ul>
+                <div class="input">
+                    <label class="p" for="maioridade">Na sua opinião, qual região teve o melhor enfeite de natal?</label>
+                    <select name="enfeite" id="enfeite" class="opcao-enfeite" >
+                        <option value="Joao-Aranha">Árvore de Natal João Aranha</option>
+                        <option value="Castelo">Decoração no Balão do Castelo</option>
+                        <option value="São-Jose">Papai noel de Areia do São José</option>
+                        <option value="Cooperlotes">Renas Brilhantes do Cooperlotes</option>
+                    </select>
+                </div>
+                <label class="p" for="maioridade">Eu sou:</label>
+                <div class="input_3">
+                    <div class="sub1">                                                
+                            <input type="checkbox" name="visitante" id="visitante" value="morador" >
+                            <label for="morador">Morador</label>                   
+                    </div>
+                    <div class="sub1">                                                
+                        <input type="checkbox" name="visitante" id="visitante" value="morador" >
+                        <label for="morador">Visitante</label>                   
+                    </div>
+                    <div class="sub1">                                                
+                        <input type="checkbox" name="visitante" id="visitante" >
+                        <label for="visitante">Estudante</label>                   
+                    </div>
+                   
+
+                </div>
+                 <div class="input_2">
+                        <div class="input">
+                            <input type="submit" value="Enviar">
+                        </div>
+                        <div class="input">
+                            <input type="reset" value="Apagar">
+                        </div>
+                 </div>
+                
+        </main> 
+           
+
+        </form>
+
+
+
+
+
+
+    </div>   
+</body>
+
+<footer>
+    <div class="rodape">Checkpoint 2 - Mateus de Assis Silva</div>
+    <a href="https://www.youtube.com/watch?v=hLf0-lro8X8" class="botao"><img src="./img/noel.png" alt=""></a>
+
+
+
+</footer>
+
+
+</html>
