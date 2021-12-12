@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	 crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+	 crossorigin="anonymous">
+
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+	 crossorigin="anonymous">
+
+	</script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="icon" href="./img/popcorn.png" />
+	<title>SessãoPipoca</title>
+</head>
+
+<body class="d-flex flex-column vh-100">
+	<nav class="nav navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+				<img src="./img/logo.png" alt="logo" width="100"  class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarToggler">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#item">Itens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#rodape">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page"  data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid pb-5">
+        <div class="row text-white align-items-center main">
+            <div class="col">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-8">
+                            <h1 class="text-danger"><strong>Sessão Pipoca</strong></h1>
+                            <h2 class="fs-4"><small> Confira a maior coletânia de filmes que Sessão Pipoca tem a oferecer</small> </h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-sm-3 d-grid">
+                            <a type="button" class="btn btn-outline-success btn-lg text-white py-3" href="#item">Explorar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="item" class="container">
+            <div class="row justify-content-center">
+                <h2 class="fs-1 fw-bold text-center pt-5">Itens</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card shadow h-100">
+                            <img src="./img/gaviao.jfif" class="card-img-top" alt="Gavião Arqueiro" title="Gavião Arqueiro">
+                            <div class="card-body bg-light">
+                                <h5 class="card-title fw-bold">Gavião Arqueiro</h5>
+                                <p class="card-text">Kate Bishop, uma arqueira habilidosa cujo excesso de confiança pode afetar suas decisões, cai no meio de uma conspiração criminosa. Enquanto isso, a tão aguardada viagem de Natal de Clint Barton com os filhos para a cidade de Nova York é interrompida quando uma parte dolorosa do seu passado ressurge. É uma questão de tempo até os caminhos dos dois se cruzarem, tirando o Gavião Arqueiro da aposentadoria.</p>
+                            </div>
+                            <div class="d-grid p-4 bg-light">
+                                <a href="gaviao_arqueiro.html" class="btn btn-success p-2">Abrir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow h-100">
+                            <img src="./img/Shang.jfif" class="card-img-top" alt="Capa do Filme Shang-Chi" title="Shang-Chi">
+                            <div class="card-body bg-light">
+                                <h5 class="card-title fw-bold">Shang-Chi</h5>
+                                <p class="card-text">Shang-Chi precisa encarar o passado que ele pensou ter deixado para trás e confrontar o pai, líder da perigosa organização Dez Anéis.</p>
+                            </div>
+                            <div class="d-grid p-4 bg-light">
+                                <a href="shangchi.html" class="btn btn-success p-2">Abrir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow h-100">
+                            <img src="./img/Falcao.jfif" class="card-img-top" alt="Capa do Filme Capitão America" title="Capitão America">
+                            <div class="card-body bg-light">
+                                <h5 class="card-title fw-bold">Falcão e o Soldado Invernal</h5>
+                                <p class="card-text">Da Marvel Studios, “Falcão e o Soldado Invernal” traz Anthony Mackie como Sam Wilson (Falcão) e Sebastian Stan como Bucky Barnes (Soldado Invernal). A dupla, que se reuniu nos momentos finais de “Vingadores: Ultimato”, embarca em uma aventura pelo mundo que colocará suas habilidades à prova – e sua paciência também.</p>
+                            </div>
+                            <div class="d-grid p-4 bg-light">
+                                <a href="gaviao_arqueiro.html" class="btn btn-success p-2">Abrir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow h-100">
+                            <img src="./img/vingadores.jfif" class="Capa do Filme Vingadores" alt="Vingadores">
+                            <div class="card-body bg-light">
+                                <h5 class="card-title fw-bold">Vingadores</h5>
+                                <p class="card-text">No final épico da Saga do Infinito, os Vingadores enfrentam Thanos. Quando eventos devastadores eliminam metade da população mundial e dividem suas fileiras, o resto dos heróis lutam para avançar. Mas eles devem se unir para restaurar a ordem e a harmonia no universo e trazer de volta seus entes queridos.</p>
+                            </div>
+                            <div class="d-grid p-4 bg-light">
+                                <a href="gaviao_arqueiro.html" class="btn btn-success p-2">Abrir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow h-100">
+                            <img src="./img/panteraNegra.jfif" class="Capa do Filme Pantera Negra" alt="Pantera Negra">
+                            <div class="card-body bg-light">
+                                <h5 class="card-title fw-bold">Pantera Negra</h5>
+                                <p class="card-text">Pantera Negra segue T'Challa que, após a morte de seu pai, volta para casa numa isolada e tecnologicamente avançada nação africana para triunfar e assumir seu lugar como rei. Mas, quando um poderoso antigo inimigo reaparece, o poder de T'Challa como rei – e Pantera Negra – é testado ao ser atraído para um formidável conflito que coloca o destino de Wakanda e de todo mundo em risco.</p>
+                            </div>
+                            <div class="d-grid p-4 bg-light">
+                                <a href="gaviao_arqueiro.html" class="btn btn-success p-2">Abrir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow h-100">
+                            <img src="./img/viuvaNegra.jfif" class="Capa do Filme Viúva Negra" alt="Viúva Negra">
+                            <div class="card-body bg-light">
+                                <h5 class="card-title fw-bold">Viúva Negra</h5>
+                                <p class="card-text">Natasha Romanoff, também conhecida como Viúva Negra, confronta o lado mais sombrio de sua história quando surge uma perigosa conspiração ligada ao seu passado. Perseguida por uma força implacável disposta a tudo para destruí-la, Natasha precisa agora lidar com seu passado como espiã e com as relações que deixou para trás muito antes de se tornar uma Vingadora.</p>
+                            </div>
+                            <div class="d-grid p-4 bg-light">
+                                <a href="gaviao_arqueiro.html" class="btn btn-success p-2">Abrir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content p-4">
+                <div class="modal-body">
+                    <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="my-3 text-center">
+                        <img class="float-center w-75" src="img/logo.png" alt="logo">
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">email:</label>
+                            <input type="email" class="form-control form-control-lg" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha" class="col-form-label">senha:</label>
+                            <input type="password" class="form-control form-control-lg" id="senha">
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success btn-lg mt-5" data-bs-dismiss="modal">Entrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="rodape" class="bg-dark p-3">
+        <div class="container">
+            <div class="row">
+                <div id="col1" class="col-12 col-sm-4 text-sm-start p-2">
+                    <h5 class="text-white">Thiago Dorea</h5>
+                    <p>Responsável pelo desenvolvimento do html e css</p>
+                    <a href="https://www.linkedin.com/in/thiagodorea/" target="blank"> <i class="fab fa-linkedin"></i> </a>
+                    <a href="https://github.com/thiagodorea" target="blank"> <i class="fab fa-github"></i> </a>
+                </div>
+                <div id="col2" class="col-12 col-sm-4 text-sm-center p-2">
+                    <h5 class="text-white">Thiago Dias</h5>
+                    <p>Responsável pelo desenvolvimento do html e css</p>
+                    <a href="http://linkedin.com/in/thiago-dias-30755219b" target="blank"> <i class="fab fa-linkedin"></i> </a>
+                    <a href="https://github.com/Thiago-Chagas" target="blank"> <i class="fab fa-github"></i> </a>
+                </div>
+                <div id="col3" class="col-12 col-sm-4 text-sm-end p-2">
+                    <h5 class="text-white">Mateus de Assis</h5>
+                    <p>Responsável pelo desenvolvimento do html e css</p>
+                    <a href="http://linkedin.com/in/mateusdeassis" target="blank"> <i class="fab fa-linkedin"></i> </a>
+                    <a href="#" target="blank"> <i class="fab fa-github"></i> </a>
+                </div>
+                <div class="row py-4 ">
+                    <div class="col text-center">
+                        <h6>Checkpoint 3 desenvolvimento em 2021 </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+</body>
+</html>
